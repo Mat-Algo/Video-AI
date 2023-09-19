@@ -53,7 +53,7 @@ def download(video_id: str) -> str:
             'preferredcodec': 'm4a',
         }]
     }
-    with yt_dlp.YoutubeDL(ydl_opts,'ffmpeg_location': "/usr/bin/ffmpeg") as ydl:
+    with yt_dlp.YoutubeDL(ydl_opts,{'ffmpeg_location': "/usr/bin/ffmpeg"}) as ydl:
         error_code = ydl.download([video_url])
         if error_code != 0:
             raise Exception('Failed to download video')
