@@ -7,5 +7,6 @@ langchain
 txtai
 PyPDF2
 regex
-
+ffprobe
+ffmpeg
 
