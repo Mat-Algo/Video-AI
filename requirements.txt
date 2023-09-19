@@ -1,23 +1,11 @@
-asyncio
-bs4
-certifi
-cffi
-chardet
-click
-cssutils
-idna
-langchain
-openai
-Pillow
-pycparser
-pydub
-PyPDF2
-requests
 streamlit
-txtai
-urllib3
-whisper
+asyncio
 yt-dlp
-
+whisper
+openai
+langchain
+txtai
+PyPDF2
+re
 
 
