@@ -9,7 +9,6 @@ from langchain.document_transformers import DoctranTextTranslator
 from txtai.pipeline import Summary, Textractor
 from PyPDF2 import PdfReader
 from langchain.chains.summarize import load_summarize_chain
-from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
 from langchain.vectorstores import FAISS
