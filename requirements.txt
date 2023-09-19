@@ -6,6 +6,6 @@ openai
 langchain
 txtai
 PyPDF2
-re
+regex
 
 
