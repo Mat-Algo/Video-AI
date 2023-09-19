@@ -1,11 +1,10 @@
 streamlit
 asyncio
 yt-dlp
-whisper
 openai
 langchain
 txtai
 PyPDF2
 regex
-ffmpeg-python
+ffmpeg
 git+https://github.com/openai/whisper.git
