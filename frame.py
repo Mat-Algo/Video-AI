@@ -18,21 +18,7 @@ from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 import re
 
-# Set the OpenAI API key
-os.environ['OPENAI_API_KEY'] = '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'
 
-# Configure Streamlit
-# st.set_page_config(
-#     page_title="My Streamlit App",
-#     page_icon="✅",
-#     layout="wide",
-#     initial_sidebar_state="expanded",
-#     background_color="#f0f0f0"  # Set the desired background color using a hex color code
-# )
-
-openai.api_key = ""
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["OPENAI_API_MODEL"] = "davinci-002"
 
 st.title("VideoAI App")
 st.write("Welcome to the VideoAI app! Upload a YouTube URL to get started.")
@@ -42,6 +28,10 @@ st.title("Instructions")
 st.write("1. Enter a YouTube URL.")
 st.write("2. Choose the desired actions.")
 st.write("3. Click 'Process' to start.")
+
+# os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets["key"]
+os.environ["OPENAI_API_MODEL"] = "davinci-002"
 
 def download(video_id: str) -> str:
     video_url = f'{video_id}'
