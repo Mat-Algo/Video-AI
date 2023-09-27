@@ -29,7 +29,7 @@ st.write("1. Enter a YouTube URL.")
 st.write("2. Choose the desired actions.")
 st.write("3. Click 'Process' to start.")
 
-# os.environ["OPENAI_API_KEY"] = "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"
+
 os.environ["OPENAI_API_KEY"] = st.secrets["key"]
 os.environ["OPENAI_API_MODEL"] = "davinci-002"
 
